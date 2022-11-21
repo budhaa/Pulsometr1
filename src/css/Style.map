@@ -2,7 +2,7 @@
 	"version": 3,
 	"file": "Style.css",
 	"sources": [
-		"../Sass/Style.sass"
+		"../Sass/Style.scss"
 	],
 	"sourcesContent": [
 		"h2 {\n    color: red; }\n"

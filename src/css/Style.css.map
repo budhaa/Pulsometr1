@@ -1,1 +1,9 @@
-{"version":3,"sources":["../Sass/Style.sass"],"names":[],"mappings":"AAAA,GACI,SAAA","file":"Style.css"}
+{
+    "version": 3,
+    "sources": [
+        "../Sass/Style.scss"
+    ],
+    "names": [],
+    "mappings": "AAAA,GACI,SAAA",
+    "file": "Style.css"
+}
