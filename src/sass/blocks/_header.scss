@@ -19,6 +19,18 @@
 			font-size: 18px;
 		}
 	}
+	&__official_min {
+		display: none;
+		margin: 0 auto;
+		margin-bottom: 5px;
+		width: 560px;
+		font-weight: 500;
+		font-size: 10px;
+		color: #FFFFFF;
+		span {
+			font-size: 11px;
+		}
+	}
 	&__phone {
 		display: block;
 		font-weight: 700;
