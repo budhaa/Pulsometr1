@@ -17,7 +17,7 @@
 	  });
 }); */
 
-const slider = tns({
+/* const slider = tns({
     container: '.carousel__inner',
     items: 1,
     slideBy: 'page',
@@ -32,4 +32,18 @@ const slider = tns({
 
   document.querySelector('.next').addEventListener('click', function () {
 	slider.goTo('next');
+  }); */
+
+  $(document).ready(function(){
+	$(".owl-carousel").owlCarousel({
+		loop:true,
+		margin:10,
+		nav:false,
+		items:1
+		
+	});
   });
+
+  document.querySelector('.next').addEventListener('click', function () {
+	slider.goTo('next');
+});
