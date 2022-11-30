@@ -44,6 +44,22 @@
 	});
   });
 
-  document.querySelector('.next').addEventListener('click', function () {
-	slider.goTo('next');
+  $(document).ready(function(){
+	$(".owl-carousel").owlCarousel({
+		loop:true,
+		margin:10,
+		nav:false,
+		items:1
+		
+	});
+});
+
+  const owl = $('.owl-carousel'); //здесь мы помещаем в переменную owl собственно свою карусель.
+
+  $('.next').click(function() { // тут написанной найди элемент с классом .next и выполни такую функцию
+    owl.trigger('next.owl.carousel', [500]); // для переменной owl выполни функцию trigger и параметром "далее" и задержкой 500млс
+});
+
+$('.prev').click(function() { // тут тоже самое, только для кнопки назад
+    owl.trigger('prev.owl.carousel', [500]);
 });
