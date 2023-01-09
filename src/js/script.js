@@ -34,7 +34,7 @@
 	slider.goTo('next');
   }); */
 
-  $(document).ready(function(){
+$(document).ready(function(){
 	$(".owl-carousel").owlCarousel({
 		loop:true,
 		margin:10,
@@ -42,24 +42,35 @@
 		items:1
 		
 	});
-  });
 
-  $(document).ready(function(){
-	$(".owl-carousel").owlCarousel({
-		loop:true,
-		margin:10,
-		nav:false,
-		items:1
-		
-	});
-});
+	const owl = $('.owl-carousel'); //здесь мы помещаем в переменную owl собственно свою карусель.
 
-  const owl = $('.owl-carousel'); //здесь мы помещаем в переменную owl собственно свою карусель.
-
-  $('.next').click(function() { // тут написанной найди элемент с классом .next и выполни такую функцию
+	$('.next').click(function() { // тут написанной найди элемент с классом .next и выполни такую функцию
     owl.trigger('next.owl.carousel', [500]); // для переменной owl выполни функцию trigger и параметром "далее" и задержкой 500млс
+	});
+
+	$('.prev').click(function() { // тут тоже самое, только для кнопки назад
+    owl.trigger('prev.owl.carousel', [500]);
+	});
+
+	$('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
+		$(this)
+		  .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
+		  .closest('div.container').find('div.catalog__content').removeClass('catalog__content_active').eq($(this).index()).addClass('catalog__content_active');
+	});
+
+	function toggleSlide(item){
+		$(item).each(function(i) {
+		$(this).on('click', function(e) {
+			e.preventDefault();
+			$('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
+			$('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
+			})
+		});
+	};
+
+	toggleSlide('.catalog-item__link')
+	toggleSlide('.catalog-item__back')
 });
 
-$('.prev').click(function() { // тут тоже самое, только для кнопки назад
-    owl.trigger('prev.owl.carousel', [500]);
-});
+  
