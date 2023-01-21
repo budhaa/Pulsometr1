@@ -55,7 +55,12 @@
 			}
 		}
 		
-    } 
+    }
+	.feedback {
+		&__descr {
+			font-size: 15px;
+		}
+	}
 	
 }
 @media (max-width: 767px){
@@ -200,6 +205,27 @@
 			}
 		}
 	}
+	.feedback {
+		&__item {
+			img {
+			width: 130px;
+			height: 130px;
+			margin-right: 46px;
+			}
+		}
+		&__subtitele {
+			font-size: 16px;
+			line-height: 16px;
+
+		}
+		&__count {
+			font-size: 12px;
+		}
+		&__descr {
+			font-size: 14px;
+			line-height: 22px;
+		}
+	}
 	
 }
 
@@ -328,5 +354,19 @@
 		align-items: center;
 		justify-content:center;
 	}
+	.feedback {
+		&__item {
+			justify-content: center;
+    		flex-wrap: wrap;
+			img {
+				margin: 0 0 20px 0;
+			}
+		}
+		&__text {
+			text-align: center;
+		}
+
+	}
+
 
 }
