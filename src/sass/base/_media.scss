@@ -6,10 +6,18 @@
 		&__item{
 			max-width: 244px;
 		}
-    } 
+    }
+	.carousel {
+		&__inner {
+			width: calc(100% - 230px);
+		}	
+
+	} 
 	.catalog-item {
 		width: 284px;
 	}
+	
+	
 }
 
 @media (max-width: 991px){
@@ -56,6 +64,16 @@
 		}
 		
     }
+
+	.carousel {
+		.prev, .next {
+			img {
+				width: 28px;
+				height: 45px;
+			}	
+		}
+	}
+
 	.feedback {
 		&__descr {
 			font-size: 15px;
@@ -63,6 +81,7 @@
 	}
 
 	.footer {
+		min-height: 466px;
 		&__info {
 		width: 400px;
 		height: 250px;
@@ -195,6 +214,27 @@
 			font-size: 14px;
 		}
 	}
+
+	.carousel {
+		padding: 60px 0 50px 0;
+		&__inner {
+			width: calc(100% - 220px);
+		}	
+		.prev, .next {
+			img {
+				width: 23px;
+				height: 40px;
+			}	
+		}
+		.prev {
+			left: -56px;
+		}
+		.next {
+			right: -56px;
+		}
+			
+	} 
+
 	.catalog {
 		&__tabs {
 			margin-top: 40px;
@@ -368,6 +408,25 @@
 		min-height: 470px;
 	}
 
+	.carousel {
+		padding: 40px 0 30px 0;
+		&__inner {
+			width: calc(100% - 144px);
+		}	
+		.prev, .next {
+			img {
+				width: 15px;
+				height: 30px;
+			}	
+		}
+		.prev {
+			left: -50px;
+		}
+		.next {
+			right: -50px;
+		}		
+	} 
+
 	.catalog__tab {
 		position: relative;
 		width: 78px;
@@ -392,6 +451,7 @@
 	}
 
 	.footer {
+		min-height: 430px;
 		&__map {
 			height: 430px;
 		}
