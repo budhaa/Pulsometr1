@@ -80,10 +80,6 @@ $(document).ready(function(){
 	$('.modal__close').on('click', function() {
 		$('.overlay, #consultation, #thanks, #order').fadeOut('slow');
 	});
-/* 	$('.button_mini').on('click', function() {
-		$('.overlay, #order').fadeIn('slow');
-	}); */
-
 	$('.button_mini').each(function(i) {
 		$(this).on('click', function() {
 			$('#order .modal__descr').text($('.catalog-item__subtitele').eq(i).text());
@@ -92,4 +88,3 @@ $(document).ready(function(){
 	});
 });
 
-  

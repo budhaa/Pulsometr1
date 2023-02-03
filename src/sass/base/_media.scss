@@ -186,7 +186,7 @@
 
 	.feed-form {
 		margin-top: 24px;
-		width: 250px;
+		width: 294px;
 		input {
 			height: 40px;
 			margin-bottom: 8px;
@@ -290,6 +290,12 @@
 		&__social {
 			margin-top: 28px;
 		}
+	}
+
+	.modal {
+		padding: 40px 25px;
+		width: 346px;
+		min-height: 340px;
 	}
 }
 
@@ -408,6 +414,9 @@
 		min-height: 470px;
 	}
 
+	.feed-form {
+		width: 268px;
+	}
 	.carousel {
 		padding: 40px 0 30px 0;
 		&__inner {
@@ -471,12 +480,28 @@
 			margin-top: 18px;	
 		}	
 		&__social-item {
-				margin-right: 18px;
-				img {
-					width: 34px;
-        			height: 34px;
-				}
-				
+			margin-right: 18px;
+			img {
+				width: 34px;
+				height: 34px;
 			}
+			
+		}
+	}
+
+	.modal {
+		padding: 40px 16px;
+		width: 300px;
+		min-height: 340px;
+		&__close {
+			top: 10px;
+			right: 8px;
+		}
+		&__subtitele {
+			font-size: 16px;
+		}
+		&__descr {
+			font-size: 13px;
+		}
 	}
 }
