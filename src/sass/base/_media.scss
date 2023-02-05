@@ -296,6 +296,9 @@
 		padding: 40px 25px;
 		width: 346px;
 		min-height: 340px;
+		&_mini {
+			min-height: 140px;
+		}
 	}
 }
 
@@ -502,6 +505,9 @@
 		}
 		&__descr {
 			font-size: 13px;
+		}
+		&_mini {
+			min-height: 140px;
 		}
 	}
 }
